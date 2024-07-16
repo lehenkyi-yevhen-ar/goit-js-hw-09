@@ -1,3 +1,5 @@
+
+
 const images = [
     {
       preview:
@@ -64,9 +66,11 @@ const images = [
     },
   ];
 
+
   const galleryMarkup = createGalleryMarkup(images);
 
   const gallery = document.querySelector('.gallery')
+
 
   function createGalleryMarkup(images) {
     return images
@@ -84,10 +88,3 @@ const images = [
 
   gallery.insertAdjacentHTML('beforeend', galleryMarkup)
 
-import SimpleLightbox from "simplelightbox";
-
-import "simplelightbox/dist/simple-lightbox.min.css";
-
-// var lightbox = new SimpleLightbox('.gallery');
-
-captionsData: 'alt'
