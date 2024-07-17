@@ -16,18 +16,17 @@ function submitData(event) {
 
     if (inputEmail.value.trim() === '' || inputText.value.trim() === '') {
         alert ('Fill please all fields')
-    } else
+    } else {
 
     localStorage.removeItem(STORAGE_KEY)
 
     event.currentTarget.reset();
 
     console.log(formData);
+    }
 }
 
 function inputData(event) {
-    event.preventDefault();
-
     formData = {email: inputEmail.value.trim(), 
                 message: inputText.value.trim()}
     try {
