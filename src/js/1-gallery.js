@@ -87,7 +87,8 @@ const images = [
 	</a>
 </li>`).join('')
   }
-
+ 
+  
   gallery.insertAdjacentHTML('beforeend', galleryMarkup)
 
   const lightbox = new SimpleLightbox('.gallery a', {
